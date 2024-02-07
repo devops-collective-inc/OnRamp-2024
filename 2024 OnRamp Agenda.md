@@ -80,8 +80,7 @@ Some sessions may be nothing more than a conversation with attendees.
 | 2:00-2:45 | Writing PowerShell Modules (*[Jeff Hicks]*)  |
 | 2:45-3:15 | __Break__ |
 | 3:15-4:00 | Introduction to DevOps (*[Dave Carroll]*) |
-| 4:00-4:45 | Pester 101 - Testing your Code (*[Rob Pleau]*)|
-| 4:45-5:00 | __Daily Wrap-Up and Questions__ (*[Jeff Hicks] & [Mike F. Robbins]*) |
+| 4:15-5:00 | Pester 101 - Testing your Code (*[Rob Pleau]*)|
 
 ## Wednesday 10 April
 
