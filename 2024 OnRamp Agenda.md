@@ -45,6 +45,13 @@ Breaks are scheduled to coincide with the [PowerShell Summit].
 Not all presentations have to be formal lectures with PowerPoint.
 Some sessions may be nothing more than a conversation with attendees.
 
+## Sunday 7 April
+
+| Schedule | Event |
+|------:|------|
+| 4:30-5:00 | __*OnRamp Welcome Reception*__ (Courtyard Marriott) |
+| 5:00-7:00 | __*PowerShell Summit Welcome Reception*__ (Courtyard Marriott) |
+
 ## Monday 8 April
 
 | Schedule | Event |
