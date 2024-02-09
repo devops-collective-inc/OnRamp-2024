@@ -73,11 +73,11 @@ Some sessions may be nothing more than a conversation with attendees.
 | 9:30-10:15 | __PowerShell Summit Keynote__ (*[PowerShell Summit]*) |
 | 10:15-10:30 | __Break__ |
 | 10:30-11:15 | __State of the Shell__ (*[PowerShell Summit]*) |
-| 11:15-12:00 | OnRamp Welcome and Intro (*[Jeff Hicks] & [Mike F. Robbins]*) |
+| 11:15-12:00 | OnRamp Keynote (*[Abby Kearns]*) |
 | 12:00-1:00 | *Lunch*|
-| 1:00-1:45 | Introduction to Azure (*[Mike F. Robbins]*) |
+| 1:00-1:45 | OnRamp Welcome and Intro (*[Jeff Hicks] & [Mike F. Robbins]*) |
 | 1:45-2:00 | __Break__ |
-| 2:00-2:45 | Writing PowerShell Modules (*[Jeff Hicks]*)  |
+| 2:00-2:45 |  Introduction to Azure (*[Mike F. Robbins]*) |
 | 2:45-3:15 | __Break__ |
 | 3:15-4:00 | Introduction to DevOps (*[Dave Carroll]*) |
 | 4:15-5:00 | Pester 101 - Testing your Code (*[Rob Pleau]*)|
@@ -127,4 +127,5 @@ Some sessions may be nothing more than a conversation with attendees.
 [Steven Judd]: https://669d22bc694a43e5b33e39b05ceb8de9.sessionize.com/speaker/f2fc61c6-9544-46d4-8edd-e1e963be1421
 [Sean Wheeler]: https://github.com/sdwheeler
 [Corey Knox]: https://669d22bc694a43e5b33e39b05ceb8de9.sessionize.com/speaker/34e22f63-2f05-4bc2-9bf9-13e66f5d9be8
+[Abby Kearns]: https://www.linkedin.com/in/abbykearns/
 [PowerShell Summit]: https://powershellsummit.org/schedule
