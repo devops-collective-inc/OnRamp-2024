@@ -4,7 +4,7 @@
 
 ## Welcome
 
-This is what you can expect for your OnRamp week.  The organizers have put together a great program for you with the goal of giving you a jump start on your IT career. The content will be a mix of traditional presentations, demonstrations, and hands-on exercises led by veteran IT professionals. The content will mix traditional presentations, demonstrations, and hands-on exercises led by veteran IT professionals.
+This is what you can expect for your OnRamp week.  The organizers have put together a great program for you with the goal of giving you a jump start on your IT career. The content will be a mix of traditional presentations, demonstrations, and hands-on exercises led by veteran IT professionals.
 
 This program is a "conference-within-a-conference." Your schedule also includes attending keynotes and major events in the main conference. You are invited and encouraged to attend all evening social events that are part of the primary conference. These events are what makes this conference special. Breaks are scheduled to coincide with the main conference so you will have plenty of opportunities to mingle and network.
 
