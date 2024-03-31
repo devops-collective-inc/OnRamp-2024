@@ -4,14 +4,14 @@ Topics to be covered in OnRamp 2024 to teach PowerShell basics and allow for han
 
 ## Outline
 
-- What is PowerShell?
+- What is PowerShell? [Jeff Hicks]
   - A quick history lesson
   - Cross-platform
-- Installing PowerShell *
+- Installing PowerShell* [Mike F Robbins]
   - PSVersionTable
   - Basic navigation
   - Running native commands
-- Terminology
+- Terminology [Mike F Robbins]
   - cmdlet
   - function
   - module
@@ -19,41 +19,41 @@ Topics to be covered in OnRamp 2024 to teach PowerShell basics and allow for han
   - array
   - hashtable
   - script block
-- Get-Help
+- Get-Help [Mike F Robbins]
   - Updating Help *
   - Getting Help
   - Understanding Help
   - About topics
-- Get-Command
+- Get-Command [Mike F Robbins]
   - Finding commands
   - Running commands *
   - Using Microsoft.PowerShell.PSResourceGet commands
-- Pipeline Introduction
+- Pipeline Introduction [Jeff Hicks]
   - Objects
   - Using Get-Member *
   - Select-Object
-- PowerShell Remoting *
+- PowerShell Remoting * [Jeff Hicks]
   - Using credentials
   - 1-1 remoting
   - 1 to many remoting
   - Using PSSessions
   - Get-CimInstance
-- Introduction to PowerShell Scripting
+- Introduction to PowerShell Scripting [Jeff Hicks]
   - Execution policy
   - Running scripts
   - Profile scripts
   - Scope
-- Scripting Language
+- Scripting Language [Mike F Robbins]
   - Variables
   - Arrays
   - Hashtables
   - If statements
-- Writing a Basic script *
+- Writing a Basic script * [Mike F Robbins]
   - Parameterizing the script
-- Writing a Basic function *
+- Writing a Basic function * [Jeff Hicks]
   - Adding parameters
   - dot sourcing
-- Writing an Advanced function *
+- Writing an Advanced function * [Jeff Hicks]
   - cmdletbinding
   - pipeline input
-- Your next steps
+- Your next steps [Jeff Hicks]
