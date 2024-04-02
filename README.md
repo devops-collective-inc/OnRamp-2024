@@ -1,6 +1,6 @@
 # OnRamp 2024
 
-![DevOpsCollective](images/DevOpsCollectiveLogo.png)
+![DevOpsCollective](images/DevOpsLogo.png)
 
 The repository contains class material for the OnRamp 2024 program which is part of the [PowerShell+DevOps Global Summit](https://powershellsummit.org/). All items are offered as educational material.
 
