@@ -52,7 +52,7 @@ Topics to be covered in OnRamp 2024 to teach PowerShell basics and allow for han
   - Parameterizing the script
 - Writing a Basic function * [Jeff Hicks]
   - Adding parameters
-  - dot sourcing
+  - dot-sourcing
 - Writing an Advanced function * [Jeff Hicks]
   - cmdletbinding
   - pipeline input
