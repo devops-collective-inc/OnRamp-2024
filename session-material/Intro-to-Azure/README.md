@@ -5,7 +5,7 @@ presentations repo for the session material.
 
 - Session: Intro to Azure
 - Conference: PowerShell + DevOps Global Summit 2024
-- Presenter:  Mike F. Robbins
+- Presenter:  [Mike F. Robbins](https://mikefrobbins.com/)
 
 <!-- link references -->
 
