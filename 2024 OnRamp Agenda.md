@@ -96,7 +96,7 @@ Some sessions may be nothing more than a conversation with attendees.
 | 2:00-2:45 |Introduction to .NET for the IT Pro (*[Corey Knox]*) |
 | 2:45-3:15 | __Break__ |
 | 3:15-4:00 | Introduction to DSC and Configuration Management (*[Jeff Hicks]*) |
-| 4:15-5:00 | Meta Skills (*[Mikey Lombardi]*) |
+| 4:15-5:00 | Meta Skills (*[Sean Wheeler]*) |
 
 ## Thursday 11 April
 
@@ -115,7 +115,6 @@ Some sessions may be nothing more than a conversation with attendees.
 
 [Anthony Nocentino]: https://669d22bc694a43e5b33e39b05ceb8de9.sessionize.com/speaker/899e826c-0f27-48e4-a88a-2c9270b07087
 [Jeff Hicks]: https://jdhitsolutions.github.io
-[Mikey Lombardi]: https://669d22bc694a43e5b33e39b05ceb8de9.sessionize.com/speaker/3f56677a-391f-4ea2-b11c-2bbad67448e4
 [Kevin Marquette]: https://669d22bc694a43e5b33e39b05ceb8de9.sessionize.com/speaker/19064acb-e62c-4196-8227-8b1801fe8f99
 [Mike F. Robbins]: https://mikefrobbins.com
 [Andrew Pla]: https://669d22bc694a43e5b33e39b05ceb8de9.sessionize.com/speaker/4b7cd0d3-338f-4fac-b568-2f7d6574fd8f
