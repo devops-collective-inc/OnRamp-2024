@@ -96,11 +96,29 @@ Select-Object -Property Count,Name,
 Get-Service w* | Where-Object {$_.Status -eq 'running'} | Restart-Service -WhatIf
 
 1..10 | ForEach-Object {$_ * 2}
+
 "ALICE","BOB","CAROL" | ForEach-Object {$_.ToLower()}
 
-help Get-WinEvent -param LogName
+#byvalue
+help get-service -Parameter name
+"bits" | get-service
+
+#bypropertyname
+
+$o = [PSCustomObject]@{
+    Name = 'Bits'
+    Size = 3
+    Date= (Get-Date)
+}
+$o | Get-Service
+
+#be careful
+Get-Process -id $pid | Get-Service
+
+help Get-WinEvent -parameter LogName
+
 "system","application","Windows PowerShell" | Get-WinEvent -MaxEvents 5 |
-Select TimeCreated,LogName,ProviderName,ID,LevelDisplayName
+Select TimeCreated,LogName,ProviderName,ID,LevelDisplayName | Format-Table
 
 "system","application","Windows PowerShell" | Foreach-Object {
     Write-Host "Getting events from $_" -ForegroundColor green

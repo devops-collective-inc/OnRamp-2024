@@ -33,13 +33,14 @@ Topics to be covered in OnRamp 2024 to teach PowerShell basics and allow for han
   - Using Get-Member *
   - Select-Object
 - PowerShell Remoting * [Jeff Hicks]
+  - WSMan and SSH
   - Using credentials
   - 1-1 remoting
   - 1 to many remoting
   - Using PSSessions
   - Get-CimInstance
 - Introduction to PowerShell Scripting [Jeff Hicks]
-  - Execution policy
+  - Execution policy (Windows only)
   - Running scripts
   - Profile scripts
   - Scope
