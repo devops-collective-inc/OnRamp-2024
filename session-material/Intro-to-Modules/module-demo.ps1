@@ -1,6 +1,20 @@
 return "This is a demo script file."
 
-#Module basics and concepts
+#region Module basics and concepts
+
+#PSModulePath
+$env:PSModulePath -split ";"
+#Listing modules
+Get-Module
+Get-Module -ListAvailable
+
+#Find-Module
+Find-Module -Name PSCalendar
+# Install-Module -Name PSCalendar -Scope CurrentUser
+
+start https://github.com/jdhitsolutions/psgalleryreport
+
+#endregion
 
 #region Build a module
 
@@ -36,4 +50,11 @@ help Get-ServerInfo -full
 
 # module can be deployed
 
+#endregion
+
+#region module scope
+
+psedit .\MyInfo\functions\vars.ps1
+ipmo .\MyInfo -Force
+Get-info Write-Verbose
 #endregion

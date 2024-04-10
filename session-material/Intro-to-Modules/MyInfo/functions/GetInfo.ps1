@@ -3,7 +3,7 @@
 Function Get-ServerInfo {
 
     [cmdletbinding()]
-    [outputType("PSServerinfo")]
+    [outputType("PSServerInfo")]
     [alias("gsvi")]
     Param (
         [Parameter(
@@ -22,6 +22,7 @@ Function Get-ServerInfo {
 
     Begin {
         Write-Verbose "[BEGIN] Starting $($MyInvocation.MyCommand)"
+        Write-Verbose "[BEGIN] Using secret private variable: $secret"
 
         #define a hashtable of parameter values to splat to Get-CimInstance
         $cimParams = @{

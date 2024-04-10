@@ -28,7 +28,7 @@ Use this command to get basic server information.
 ```powershell
 PS C:\> Get-ServerInfo SRV1
 
-Operatingsystem    : Microsoft Windows Server 2016 Standard Evaluation
+OperatingSystem    : Microsoft Windows Server 2016 Standard Evaluation
 Version            : 10.0.14393
 Uptime             : 1.05:39:22.5945412
 MemoryGB           : 4
