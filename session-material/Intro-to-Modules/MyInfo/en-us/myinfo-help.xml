@@ -94,18 +94,6 @@
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Get-ServerInfo</maml:name>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="server, cn">
-          <maml:name>Computername</maml:name>
-          <maml:description>
-            <maml:para>The name of the computer to query. You must have admin rights.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
-          <dev:type>
-            <maml:name>String[]</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>$env:computername</dev:defaultValue>
-        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Timeout</maml:name>
           <maml:description>
@@ -121,17 +109,27 @@
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="server, cn">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named" aliases="none">
         <maml:name>Computername</maml:name>
         <maml:description>
           <maml:para>The name of the computer to query. You must have admin rights.</maml:para>
+          <maml:para></maml:para>
+          <maml:para>Type: String[]</maml:para>
+          <maml:para>Parameter Sets: (All)</maml:para>
+          <maml:para>Aliases: server, cn</maml:para>
+          <maml:para></maml:para>
+          <maml:para>Required: False</maml:para>
+          <maml:para>Position: 1</maml:para>
+          <maml:para>Default value: $env:computername</maml:para>
+          <maml:para>Accept pipeline input: True (ByPropertyName, ByValue)</maml:para>
+          <maml:para>Accept wildcard characters: False</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false"></command:parameterValue>
         <dev:type>
-          <maml:name>String[]</maml:name>
+          <maml:name></maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>$env:computername</dev:defaultValue>
+        <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Timeout</maml:name>
@@ -174,9 +172,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-ServerInfo SRV1
+        <dev:code>Get-ServerInfo SRV1
 
-Operatingsystem    : Microsoft Windows Server 2016 Standard Evaluation
+OperatingSystem    : Microsoft Windows Server 2016 Standard Evaluation
 Version            : 10.0.14393
 Uptime             : 1.05:39:22.5945412
 MemoryGB           : 4
@@ -189,7 +187,7 @@ ComputerName       : SRV1</dev:code>
       </command:example>
       <command:example>
         <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-ServerInfo SRV1,SRV2 | Export-CSV -path c:\reports\data.csv -append</dev:code>
+        <dev:code>Get-ServerInfo SRV1,SRV2 | Export-CSV -path c:\reports\data.csv -append</dev:code>
         <dev:remarks>
           <maml:para>Get server info and append to a CSV file.</maml:para>
         </dev:remarks>
@@ -212,7 +210,7 @@ ComputerName       : SRV1</dev:code>
       <command:verb>Get</command:verb>
       <command:noun>VolumeReport</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get volume information</maml:para>
       </maml:description>
     </command:details>
     <maml:description>

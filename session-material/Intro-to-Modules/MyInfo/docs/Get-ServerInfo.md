@@ -13,7 +13,7 @@ Get help desk server information
 
 ## SYNTAX
 
-```yaml
+```
 Get-ServerInfo [[-Computername] <String[]>] [-Timeout <Int32>] [<CommonParameters>]
 ```
 
@@ -26,7 +26,7 @@ Use this command to get basic server information.
 ### EXAMPLE 1
 
 ```powershell
-PS C:\> Get-ServerInfo SRV1
+Get-ServerInfo SRV1
 
 OperatingSystem    : Microsoft Windows Server 2016 Standard Evaluation
 Version            : 10.0.14393
@@ -42,7 +42,7 @@ Get server configuration data from SRV1.
 ### EXAMPLE 2
 
 ```powershell
-PS C:\> Get-ServerInfo SRV1,SRV2 | Export-CSV -path c:\reports\data.csv -append
+Get-ServerInfo SRV1,SRV2 | Export-CSV -path c:\reports\data.csv -append
 ```
 
 Get server info and append to a CSV file.
@@ -54,7 +54,7 @@ Get server info and append to a CSV file.
 The name of the computer to query.
 You must have admin rights.
 
-```yaml
+```
 Type: String[]
 Parameter Sets: (All)
 Aliases: server, cn

@@ -3,7 +3,10 @@ return "This is a demo script file."
 #region Module basics and concepts
 
 #PSModulePath
-$env:PSModulePath -split ";"
+#this is using the .NET framework to identify the path separator
+#which makes this cross-platform
+$env:PSModulePath -split [IO.Path]::PathSeparator
+
 #Listing modules
 Get-Module
 Get-Module -ListAvailable
@@ -34,6 +37,7 @@ get-command -module MyInfo
 Get-Command -module Platyps
 
 #generate markdown
+# import the latest version of the module
 # New-MarkdownHelp -Module MyInfo -OutputFolder .\docs
 # edit markdown files
 # Comment-based help will be imported.
@@ -55,6 +59,7 @@ help Get-ServerInfo -full
 #region module scope
 
 psedit .\MyInfo\functions\vars.ps1
-ipmo .\MyInfo -Force
-Get-info Write-Verbose
+Import-Module .\MyInfo -Force
+Get-ServerInfo Write-Verbose
+
 #endregion

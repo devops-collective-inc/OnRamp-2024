@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-VolumeReport
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+
+Get volume information
 
 ## SYNTAX
 
