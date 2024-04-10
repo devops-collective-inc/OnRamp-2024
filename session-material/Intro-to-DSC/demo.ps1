@@ -1,5 +1,7 @@
 return "This is a demo script file."
 
+#this should be run in Windows PowerShell NOT PowerShell 7.
+
 #Configuration Management concepts
 # Infrastructure from Code (IaC)
 
@@ -19,5 +21,5 @@ Get-Module PSDesiredStateConfiguration -ListAvailable | Import-Module
 Get-DscResource file -Syntax
 Get-DscResource -Module ComputerManagementDS
 
-ise .\MemberServer.ps1
-ise .\deploy.ps1
+powershell_ise .\MemberServer.ps1
+powershell_ise .\deploy.ps1
