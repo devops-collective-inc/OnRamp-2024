@@ -30,7 +30,7 @@ The OnRamp program has been developed with you in mind. The content is designed 
 ### Jeff Hicks
 
 Jeff Hicks is one of the "old guard" of the PowerShell world.
-He is one of the early Microsoft PowerShell MVPs, a well-known author, conference speaker, and teacher. When he isn't writing PowerShell-related books or creating courseware for Pluralsight, you can find him walking the dog, doing a crossword puzzle and enjoying a nice glass of wine, bourbon or scotch.
+He is one of the early Microsoft PowerShell MVPs, a well-known author, conference speaker, and teacher. When he isn't writing PowerShell-related books or creating course-ware for Pluralsight, you can find him walking the dog, doing a crossword puzzle and enjoying a nice glass of wine, bourbon or scotch.
 Although, probably not all at the same time! You can discover more about Jeff, including where to find him on social media at [https://jdhitsolutions.github.io/](https://jdhitsolutions.github.io/).
 
 ### Mike F. Robbins
@@ -95,7 +95,7 @@ Some sessions may be nothing more than a conversation with attendees.
 | 1:00-1:45 | Introduction to Containers and Kubernetes (*[Anthony Nocentino]*) |
 | 2:00-2:45 |Introduction to .NET for the IT Pro (*[Corey Knox]*) |
 | 2:45-3:15 | __Break__ |
-| 3:15-4:00 | Introduction to DSC and Configuration Management (*[Jeff Hicks]*) |
+| 3:15-4:00 | Introduction to PowerShell Modules (*[Jeff Hicks]*) |
 | 4:15-5:00 | Meta Skills (*[Sean Wheeler]*) |
 
 ## Thursday 11 April
