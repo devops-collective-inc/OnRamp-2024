@@ -1,0 +1,17 @@
+is_global = true
+build_property.TargetFramework = netcoreapp7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = webapp
+build_property.RootNamespace = webapp
+build_property.ProjectDir = /Users/aen/Library/CloudStorage/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/aen/Library/CloudStorage/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp
+build_property._RazorSourceGeneratorDebug = 
