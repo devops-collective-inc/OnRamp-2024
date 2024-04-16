@@ -1,4 +1,5 @@
 #requires -version 5.1
+
 Configuration MemberServer {
     Param(
     [Parameter(Position=0,Mandatory)]
@@ -10,13 +11,22 @@ Configuration MemberServer {
     #installed
     Import-DSCResource -ModuleName 'ComputerManagementDSC' -ModuleVersion  '9.0.0'
 
-
     Node $ComputerName {
 
         File CorpData {
             DestinationPath = 'C:\CorpData'
             Ensure          = 'Present'
             Type            = 'Directory'
+        }
+
+        File CorpDataReadme {
+            DestinationPath = 'C:\CorpData\readme.txt'
+            Ensure = 'Present'
+            Type = 'File'
+            Contents = "This folder is for corporate reporting files."
+            #this resource has a dependency on another setting that must
+            #be set first. DSC will handle ordering the configuration
+            DependsOn = "[File]CorpData"
         }
 
         WindowsFeature PSv2 {
