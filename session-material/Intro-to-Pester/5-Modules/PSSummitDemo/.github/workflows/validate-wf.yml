@@ -1,0 +1,64 @@
+name: Validation Workflow
+
+on:
+  # This will be referenced by other workflows
+  workflow_call:
+
+jobs:
+  validate:
+    name: Validate Module Workflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Ensure Module Dependencies Present
+        shell: pwsh
+        run: |
+          $moduleDeps = (Import-PowerShellDataFile -Path ("./src/{0}.psd1" -f (Get-Item -Path .).Name)).RequiredModules
+
+          foreach ($m in $moduleDeps) {
+            if (-not (Get-Module -ListAvailable -Name $m)) {
+              '[📦] Installing missing module dependency: {0}' -f $m
+              Install-Module -Name $m -Repository PSGallery -Confirm:$false -Force -ErrorAction Stop
+            } else {
+              "[✅] Module dependency is already present: {0}" -f $m
+            }
+          }
+
+      - name: Install Linting and Testing Deps
+        shell: pwsh
+        run: |
+          '[📦] Installing Pester and PSScriptAnalyzer for validating.'
+          Install-Module -Name Pester -Repository PSGallery -MinimumVersion 5.5.0 -WarningAction SilentlyContinue -SkipPublisherCheck -Confirm:$false -Force
+          Install-Module -Name PSScriptAnalyzer -Repository PSGallery -MinimumVersion 1.21.0 -Confirm:$false -Force
+
+      - name: PSScriptAnalyzer Linting
+        shell: pwsh
+        run: |
+          '[🔍] Running Script Analyzer.'
+          $violations = Invoke-ScriptAnalyzer -Path .\src\ -Recurse -Severity Error, Warning, ParseError -ReportSummary
+          $violations | Format-Table -AutoSize
+          if ($violations.Severity -contains 'Error') {
+            throw 'Failed PSScriptAnalyzer rules!'
+          }
+      - name: Pester Test Runs 
+        shell: pwsh
+        run: |
+          '[🧪] Running Pester.'
+          $pesterConf = New-PesterConfiguration -Hashtable @{
+            Run = @{
+              Path = './test/'
+            }
+            Filter = @{
+              ExcludeTag='integration' 
+            }
+            Output=@{
+              CIFormat='GithubActions'
+              Verbosity='Detailed'
+            }
+          }
+          Invoke-Pester -Configuration $pesterConf
+
+
