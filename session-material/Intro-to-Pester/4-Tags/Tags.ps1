@@ -1,0 +1,1 @@
+Invoke-Pester -Path . -Tag "Acceptance" -ExcludeTag "Flaky", "Slow", "LinuxOnly"
